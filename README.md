@@ -1,4 +1,4 @@
-Facebook Login With .Net Core MVC 
+Facebook Login With .Net Core MVC Without identity
 
 Necessary Package : Microsoft.AspNetCore.Authentication.Facebook
 

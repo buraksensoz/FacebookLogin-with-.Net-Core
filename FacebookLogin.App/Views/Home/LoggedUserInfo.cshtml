@@ -1,0 +1,37 @@
+﻿@model UserModel
+Hi FaceMan 
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-3">
+            <img class="rounded img-fluid float-right" style="width:150px" src="@Model.PhotoUrl" alt="@Model.UserName" />
+        </div>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-6">Username</div>
+                <div class="col-md-6">@Model.UserName</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">Email</div>
+                <div class="col-md-6">@Model.Email</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">BirthDay</div>
+                <div class="col-md-6">@Model.Born</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">Face-id</div>
+                <div class="col-md-6">@Model.Identifier</div>
+            </div>
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a asp-action="signout" class="btn btn-danger d-block">Sign Out</a>
+        </div>
+    </div>
+</div>
